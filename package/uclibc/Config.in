@@ -47,7 +47,7 @@ config BR2_TOOLCHAIN_BUILDROOT_LOCALE
 
 choice
 	prompt "Thread library implementation"
-	default BR2_PTHREADS_NATIVE
+	default BR2_PTHREADS_NONE
 	help
 	  Use this option to select the thread library implementation
 	  that should be used in your toolchain.

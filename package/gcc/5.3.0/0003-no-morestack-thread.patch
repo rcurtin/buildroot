@@ -1,0 +1,11 @@
+--- a/libgcc/generic-morestack-thread.c	2025-08-04 20:57:29.373319048 +0000
++++ b/libgcc/generic-morestack-thread.c	2025-08-04 20:57:15.025255374 +0000
+@@ -35,7 +35,7 @@
+    will want to define inhibit_libc while building a compiler which
+    can build glibc.  */
+ 
+-#ifndef inhibit_libc
++#ifdef definitely_not_defined
+ 
+ #include <errno.h>
+ #include <pthread.h>
